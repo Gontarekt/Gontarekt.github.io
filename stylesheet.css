@@ -12,7 +12,7 @@ h1 {
 p {
     color: rgb(255, 255, 255);
 }
-div {
+.main_div {
     border: 2px solid rgb(0, 196, 29);
     border-radius: 10px;
     width: 60%;
@@ -51,9 +51,8 @@ hr.dashed {
   width: 97.5%
 }
 
-/*
+
 .collapsible {
-  background-color: #eee;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -70,5 +69,4 @@ hr.dashed {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
-}*/
+}

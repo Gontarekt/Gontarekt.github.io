@@ -17,7 +17,7 @@ ALTERNATIVELY have bookmarks to parts of the page
 </head>
 <body>
     <!--Header-->
-    <div style="text-align: center">
+    <div class="main_div" style="text-align: center">
         <h1 style="margin-bottom:4px;">Todd A. Gontarek</h1>
         <p style="margin-top:4px;">Game Engine Developer & Software Engineer</p>
         <!--Example Comment-->
@@ -30,7 +30,9 @@ ALTERNATIVELY have bookmarks to parts of the page
     </div>
 
     <!--Projects-->
-    <div>
+    <div class="main_div">
+        <button type="button" class="collapsible">See University Projects</button>
+        <div class="content"> 
         <h2>University Projects</h2>
         <p>Galactic Garage</p>
         <p>Nomad Game Engine</p>
@@ -38,6 +40,7 @@ ALTERNATIVELY have bookmarks to parts of the page
         <p>Neuroevolution Snake AI</p>
         <p>CMP301 Graphics Project</p>
         <p>Abyssal Depths</p>
+         </div>
 
         <hr class="solid">
 
@@ -55,12 +58,30 @@ ALTERNATIVELY have bookmarks to parts of the page
     </div>
 
     <!--Work Experience-->
-    <div>
+    <div class="main_div">
         <h2>Work Experience</h2>
         <img src="Assets/AbertayUniversityWhiteLogo.png" style="width:40%;margin-bottom:0px;" alt="AbertayUniversity">
         <p>Lab Assistant | Abertay University</p>
         <img src="Assets/RenewablePartsLogo.png" style="width:40%;margin-bottom:0px;border-radius:25px;" alt="RenewableParts">
         <p>Workshop & Research Assistant | Renewable Parts Ltd.</p>
     </div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+    });
+    }
+</script>
+
 </body>
 </html>

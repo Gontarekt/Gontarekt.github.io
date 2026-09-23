@@ -3,6 +3,10 @@
 Don't use pixels, use viewport width & height instead so it handles different screens & resolutions, e.g. on Mobile
 However, I'll need to remember that basing size just on width could cause things to become too small on mobile, 
 e.g. on wide screens I may want a larger margin, but on a phone I may want a very small margin.
+
+TODO
+* Add Collapsible Sections (Work Experience, University Projects, Game Jams, Personal Projects)
+ALTERNATIVELY have bookmarks to parts of the page
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +16,7 @@ e.g. on wide screens I may want a larger margin, but on a phone I may want a ver
 	<title>Portfolio - Todd Gontarek</title>
 </head>
 <body>
+    <!--Header-->
     <div style="text-align: center">
         <h1 style="margin-bottom:4px;">Todd A. Gontarek</h1>
         <p style="margin-top:4px;">Game Engine Developer & Software Engineer</p>
@@ -24,11 +29,12 @@ e.g. on wide screens I may want a larger margin, but on a phone I may want a ver
         </a>
     </div>
 
+    <!--Projects-->
     <div>
         <h2>University Projects</h2>
         <p>Galactic Garage</p>
         <p>Nomad Game Engine</p>
-        <img src="Assets/NomadEngine.gif" width="55%" alt="Using the Level Editor in my Game Engine" />
+        <img src="Assets/NomadEngine.gif" width="97.5%" alt="Using the Level Editor in my Game Engine" />
         <p>Neuroevolution Snake AI</p>
         <p>CMP301 Graphics Project</p>
         <p>Abyssal Depths</p>
@@ -48,5 +54,13 @@ e.g. on wide screens I may want a larger margin, but on a phone I may want a ver
         <p>Unity Vox Importer</p>
     </div>
 
+    <!--Work Experience-->
+    <div>
+        <h2>Work Experience</h2>
+        <img src="Assets/AbertayUniversityWhiteLogo.png" style="width:40%;margin-bottom:0px;" alt="AbertayUniversity">
+        <p>Lab Assistant | Abertay University</p>
+        <img src="Assets/RenewablePartsLogo.png" style="width:40%;margin-bottom:0px;border-radius:25px;" alt="RenewableParts">
+        <p>Workshop & Research Assistant | Renewable Parts Ltd.</p>
+    </div>
 </body>
 </html>

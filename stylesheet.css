@@ -41,32 +41,34 @@ button {
 
 /* Solid border */
 hr.solid {
-  border-top: 3px solid #bbb;
-  width: 97.5%
+    border: none;
+    border-top: 3px solid #bbb;
+    width: 97.5%
 }
 
 /* Dashed border */
 hr.dashed {
-  border-top: 3px dashed #bbb;
-  width: 97.5%
+    border: none;
+    border-top: 3px dashed #bbb;
+    width: 97.5%
 }
 
 
 .collapsible {
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
 }
 .active, .collapsible:hover {
-  background-color: #ccc;
+    background-color: #ccc;
 }
 .content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
 }

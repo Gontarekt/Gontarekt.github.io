@@ -4,11 +4,12 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(15, 9, 29);
 }
 
 .main_div {
-    border: 2px solid rgb(0, 196, 29);
+    background-color: black;
+    border: 2px solid rgb(0, 200, 30);
     border-radius: 10px;
     width: 60%;
     margin-bottom: 10px;
@@ -42,14 +43,23 @@ hr.dashed {
     width: 97.5%
 }
 
+.showcase_row {
+    display:inline-flex;
+    align-items: stretch;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    gap: 2.5%;
+    width:75%;
+    height: 45vh;
+}
 .portfolio_showcase_block {
-    border:2px solid white;
-    width:20%;align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom:0%;
-    background-color: rgb(27, 27, 27);
+    border:2px solid rgb(0, 200, 30);
+    width:60%; 
+    background-color: rgb(0, 0, 0);
     border-radius: 2%;
+    margin:0%;
+    display: flex;
+    flex-direction: column;
 }
 .showcase_block_image {
     position: relative;
@@ -62,24 +72,55 @@ hr.dashed {
     max-width:100%;
     overflow:hidden;
     border-radius: 2%;
+    margin: 0%;
+    gap: 0%;
+    padding: 0%;
 }
-.showcase_block_header {
+.showcase_block_description_section {
+    border-top: 2px solid rgb(0, 200, 30); 
+    /*border-bottom: 2px solid white;*/
+    margin: 0%;
+    margin-top:-1%;
+    display:flex;
+    flex-direction: column;
+}
+.showcase_block_header_section {
     display:flex;
     justify-content:space-between;
     align-items: center;
-    margin-top: -5%;
-    margin-bottom: -5%;
+    margin-top: -4%;
+    margin-bottom: -4%;
+    width:100%;
+}
+.showcase_block_left_header {
+    text-align: left;
+    margin-left: 2%;
+}
+.showcase_block_right_header {
+    text-align: right;
+    margin-right: 2%;
+    color: rgb(151, 151, 151);
+    margin-bottom: auto;
 }
 .showcase_block_paragraph {
     text-align: left;
+    margin-top: auto;
     margin-left: 2%; 
     margin-right: 2%;
+    align-self: flex-start;
 }
 .showcase_block_separator {
     border: none; 
-    border-top: 2px solid white;
-    margin-top:-1%;
+    border-top: 2px solid rgb(0, 200, 30);
+    width:100%;
 }
 .showcase_block_hyperlink_section {
-
+    border-top: 2px solid rgb(0, 200, 30); 
+    align-items: center;
+    display:flex;
+    justify-content: flex-end;
+    margin-top:auto;
+    padding-top: 3%;
+    width:100%;
+    box-sizing:border-box;
 }

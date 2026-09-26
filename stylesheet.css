@@ -50,7 +50,6 @@ hr.dashed {
     margin-top: 10px;
     gap: 2.5%;
     width:75%;
-    height: 45vh;
 }
 .portfolio_showcase_block {
     border:2px solid rgb(0, 200, 30);
@@ -60,47 +59,51 @@ hr.dashed {
     margin:0%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .showcase_block_image {
-    position: relative;
-    display: block;
-    padding: 0;
-    object-fit: contain;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 .image {
     max-height:100%;
     max-width:100%;
-    overflow:hidden;
-    border-radius: 2%;
-    margin: 0%;
-    gap: 0%;
-    padding: 0%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 .showcase_block_description_section {
     border-top: 2px solid rgb(0, 200, 30); 
     /*border-bottom: 2px solid white;*/
     margin: 0%;
-    margin-top:-1%;
+    margin-top:0%;
     display:flex;
     flex-direction: column;
 }
 .showcase_block_header_section {
+    /*flex-wrap: wrap;*/
     display:flex;
     justify-content:space-between;
     align-items: center;
-    margin-top: -4%;
-    margin-bottom: -4%;
+    margin-top: -14px;
+    margin-bottom: -14px;
     width:100%;
 }
 .showcase_block_left_header {
     text-align: left;
     margin-left: 2%;
+    flex: 100%;  
+    overflow: hidden;
 }
 .showcase_block_right_header {
     text-align: right;
     margin-right: 2%;
     color: rgb(151, 151, 151);
     margin-bottom: auto;
+    flex: 0%; 
 }
 .showcase_block_paragraph {
     text-align: left;

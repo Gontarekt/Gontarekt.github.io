@@ -16,12 +16,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.image_block {
-    position: relative;
-    display: block;
-    padding: 0;
-    object-fit: contain;
-}
 
 /*For objects assigned a class, you can define a style for anything that uses the class*/
 .HyperlinkButtons {
@@ -46,4 +40,46 @@ hr.dashed {
     border: none;
     border-top: 3px dashed #bbb;
     width: 97.5%
+}
+
+.portfolio_showcase_block {
+    border:2px solid white;
+    width:20%;align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:0%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 2%;
+}
+.showcase_block_image {
+    position: relative;
+    display: block;
+    padding: 0;
+    object-fit: contain;
+}
+.image {
+    max-height:100%;
+    max-width:100%;
+    overflow:hidden;
+    border-radius: 2%;
+}
+.showcase_block_header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: -5%;
+    margin-bottom: -5%;
+}
+.showcase_block_paragraph {
+    text-align: left;
+    margin-left: 2%; 
+    margin-right: 2%;
+}
+.showcase_block_separator {
+    border: none; 
+    border-top: 2px solid white;
+    margin-top:-1%;
+}
+.showcase_block_hyperlink_section {
+
 }

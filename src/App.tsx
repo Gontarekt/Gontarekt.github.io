@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import snakeImg from './assets/NeuroevolutionSnake1.png'
 import nomadGif from './assets/NomadEngine.gif'
 import galacticGarageImg from './assets/GalacticGaragePoster.png'
@@ -14,8 +13,6 @@ class HyperlinkObject {
 }
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
     {/*Header*/}

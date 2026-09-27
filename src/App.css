@@ -7,6 +7,20 @@ body {
     background-color: rgb(15, 9, 29);
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0%;
+  padding: 0;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+li {
+  float: left;
+  padding: 8px;
+}
+
 .main_div {
     background-color: black;
     border: 2px solid rgb(0, 200, 30);
@@ -46,6 +60,7 @@ hr.dashed {
 .showcase_row {
     display:inline-flex;
     align-items: stretch;
+    justify-content: center;
     margin-bottom: 10px;
     margin-top: 10px;
     gap: 2.5%;
@@ -121,9 +136,10 @@ hr.dashed {
     border-top: 2px solid rgb(0, 200, 30); 
     align-items: center;
     display:flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: center;
     margin-top:auto;
-    padding-top: 3%;
+    padding-top: 12px;
     width:100%;
     box-sizing:border-box;
 }

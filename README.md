@@ -1,5 +1,7 @@
 # Gontarekt.github.io
 
+Temp
+
 To publish changes:
 - In terminal enter: 'npm run build'
 - Copy the index.html and assets folder inside the dist folder to the root of the repo

@@ -41,7 +41,7 @@ function App() {
 
     <>
 
-    <h1>University Projects</h1>
+    <h1 className="ShowcaseSectionHeaders">University Projects</h1>
     <div className="showcase_row">
       <ShowcaseBlock
         imageSrc={galacticGarageImg} 
@@ -96,7 +96,7 @@ function App() {
       />
     </div>
       
-    <h1>Game Jams</h1>
+    <h1 className="ShowcaseSectionHeaders">Game Jams</h1>
     <div className="showcase_row">
       <ShowcaseBlock
         imageSrc={breathingSpaceImg} 
@@ -132,7 +132,7 @@ function App() {
       />
     </div>
 
-    <h1>Personal Projects</h1>
+    <h1 className="ShowcaseSectionHeaders">Personal Projects</h1>
   <div className="showcase_row">
     <ShowcaseBlock
       imageSrc={unityVoxImporterImg} 
@@ -157,13 +157,21 @@ function App() {
     <p>
       Lab Assistant | Graphics Programming with Shaders | Abertay University
     </p>
+    <h5>
+      2026-Present
+    </h5>
     <hr className="solid" style={{ marginBottom: "2.5%" }} />
     <img
       src={renewablePartsLogo}
       style={{ width: "40%", marginBottom: 0, borderRadius: 25 }}
       alt="RenewableParts"
     />
-    <p>Workshop & Research Assistant | Renewable Parts Ltd.</p>
+    <p>
+      Workshop & Research Assistant | Renewable Parts Ltd.
+      </p>
+    <h5>
+      2022-2026
+    </h5>
   </div>
 </>
 

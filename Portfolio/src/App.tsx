@@ -1,5 +1,9 @@
 import snakeImg from './assets/NeuroevolutionSnake1.png'
 import nomadGif from './assets/NomadEngine.gif'
+import sincantationImg from './assets/Sincantation.png'
+import breathingSpaceImg from './assets/BreathingSpace.png'
+import bornToKrillImg from './assets/BornToKrill.png'
+import speedLichImg from './assets/SpeedLich.png'
 import galacticGarageImg from './assets/GalacticGaragePoster.png'
 import githubLogo from './assets/githubLogo.png'
 import itchLogo from './assets/itchLogo.png'
@@ -86,7 +90,7 @@ function App() {
   </div>
   <div className="showcase_row">
     <ShowcaseBlock
-      imageSrc={snakeImg} 
+      imageSrc={breathingSpaceImg} 
       header="Breathing Space"
       year="2024" 
       hyperlinks={[{imageSrc: itchLogo, link: "https://linkazen.itch.io/breathing-space"}]}
@@ -94,7 +98,7 @@ function App() {
       description="Placeholder"
     />
     <ShowcaseBlock
-      imageSrc={snakeImg} 
+      imageSrc={sincantationImg} 
       header="Sincantation"
       year="2024" 
       hyperlinks={[{imageSrc: itchLogo, link: "https://jowsey.itch.io/sincantation"}]}
@@ -102,7 +106,7 @@ function App() {
       description="Placeholder"
     />
     <ShowcaseBlock
-      imageSrc={snakeImg} 
+      imageSrc={bornToKrillImg} 
       header="Born to Krill"
       year="2024" 
       hyperlinks={[{imageSrc: itchLogo, link: "https://aronagox.itch.io/born-to-krill"}]}
@@ -110,7 +114,7 @@ function App() {
       description="Placeholder"
     />
     <ShowcaseBlock
-      imageSrc={snakeImg} 
+      imageSrc={speedLichImg} 
       header="Speed Lich"
       year="2024" 
       hyperlinks={[{imageSrc: itchLogo, link: "https://linkazen.itch.io/speedlich"}]}
@@ -167,9 +171,6 @@ interface ShowcaseBlockProperties {
   highlightedWords: string[]
   description: string
 }
-
-
-
 function ShowcaseBlock (args: ShowcaseBlockProperties) {
   return (
     <>
@@ -210,8 +211,6 @@ function ShowcaseBlock (args: ShowcaseBlockProperties) {
     </>
   );
 }
-
-
 function GenerateHyperlinkButtons(hyperlinks: HyperlinkObject[]) {
   const listHyperlinks = hyperlinks.map(hyperlink =>
     <li
@@ -231,7 +230,6 @@ function GenerateHyperlinkButtons(hyperlinks: HyperlinkObject[]) {
     <ul>{listHyperlinks}</ul>
   );
 }
-
 function ListHighlightedWords(highlightedWords: string[]) {
   const ListHighlightedWords = highlightedWords.map(highlightedWord =>
     <li

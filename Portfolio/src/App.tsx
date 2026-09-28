@@ -13,7 +13,9 @@ import itchLogo from './assets/itchLogo.png'
 import abertayLogo from './assets/AbertayUniversityWhiteLogo.png'
 import renewablePartsLogo from './assets/renewablePartsLogo.png'
 import unityVoxImporterImg from './assets/UnityVoxImporter.png'
+import cvPdf from './assets/CV-ToddGontarek.pdf'
 import './App.css'
+import { useState } from 'react'
 
 class HyperlinkObject {
   imageSrc: string = ""
@@ -21,6 +23,12 @@ class HyperlinkObject {
 }
 
 function App() {
+  const [display_cv, setDisplayCV] = useState(false)
+
+  function handleClick() {
+    setDisplayCV(!display_cv)
+  }
+
   return (
     <>
     {/*Header*/}
@@ -39,7 +47,8 @@ function App() {
       </a>
     </div>
 
-    <>
+    <button className="button" onClick={handleClick}>DisplayCV</button>
+    <DisplayCV display_cv={display_cv} />
 
     <h1 className="ShowcaseSectionHeaders">University Projects</h1>
     <div className="showcase_row">
@@ -56,7 +65,7 @@ function App() {
         header="Nomad Engine"
         year="2025" 
         hyperlinks={[{imageSrc: githubLogo, link: "https://github.com/Toddynator/NomadEngine"}]} 
-        highlightedWords={["C++", "CMake", "Entt", "DirectX11"]} 
+        highlightedWords={["C++", "CMake", "Entt", "DirectX11", "Jolt"]} 
         description="A C++ Game Engine with a full Level Editor and Entity Component System. Uses Entt Meta for C++ Reflection."
       />
     </div>
@@ -174,13 +183,33 @@ function App() {
     </h5>
   </div>
 </>
-
-    </>
   )
 }
 export default App
 
+// function MyButtonComponent (buttonText: string, onClick: MouseEventHandler<HTMLButtonElement>) {
+//     return (
+//         <button onClick={onClick}>
+//           {buttonText}
+//         </button>
+//     );
+// }
 
+function DisplayCV({display_cv}: {display_cv: boolean}) {
+  if (display_cv)
+  {
+    return( 
+    <embed
+      src={cvPdf}
+      width="100%"
+      height="1200px"
+    />);
+  }
+  else
+  {
+    return null
+  }
+}
 
 interface ShowcaseBlockProperties {
   imageSrc: string

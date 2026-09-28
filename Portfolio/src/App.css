@@ -21,6 +21,12 @@ li {
   padding: 8px;
 }
 
+.button {
+    width: 100px;
+    height: 40px;
+    background-color: gray;
+}
+
 .main_div {
     background-color: black;
     border: 2px solid rgb(0, 200, 30);

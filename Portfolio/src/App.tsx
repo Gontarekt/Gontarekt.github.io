@@ -32,26 +32,28 @@ function App() {
   return (
     <>
     {/*Header*/}
-    <div className="main_div" style={{ textAlign: "center" }}>
-      <h1 style={{ marginBottom: "4px" }}>Todd A. Gontarek</h1>
-      <p style={{ marginTop: "4px" }}>Game Engine Developer & Software Engineer</p>
-      <a href="https://github.com/Gontarekt">
-        <img
-          className="HyperlinkButtons"
-          src={githubLogo}
-          alt="Github"
-        />
-      </a>
-      <a href="https://gontarekt.itch.io/">
-        <img className="HyperlinkButtons" src={itchLogo} alt="Itch" />
-      </a>
+    <div className="main_div">
+      <h1 style={{margin: "auto", padding: "15px", lineHeight:"0.75"}}>Todd A. Gontarek</h1>
+      <p style={{margin: "auto", padding: "0px", lineHeight:"0.75"}}>Game Engine Developer & Software Engineer</p>
+      <div className="hyperlinkSection">
+        <a href="https://github.com/Gontarekt">
+          <img
+            className="HyperlinkButtons"
+            src={githubLogo}
+            alt="Github"
+          />
+        </a>
+        <a href="https://gontarekt.itch.io/">
+          <img className="HyperlinkButtons" src={itchLogo} alt="Itch" />
+        </a>
+      </div>
     </div>
 
-    <button className="button" onClick={handleClick}>DisplayCV</button>
+    <button style={{marginTop:"10px"}} onClick={handleClick}>DisplayCV</button>
     <DisplayCV display_cv={display_cv} />
 
     <h1 className="ShowcaseSectionHeaders">University Projects</h1>
-    <div className="showcase_row">
+    <div className="showcase-grid">
       <ShowcaseBlock
         imageSrc={galacticGarageImg} 
         header="Galactic Garage"
@@ -68,9 +70,6 @@ function App() {
         highlightedWords={["C++", "CMake", "Entt", "DirectX11", "Jolt"]} 
         description="A C++ Game Engine with a full Level Editor and Entity Component System. Uses Entt Meta for C++ Reflection."
       />
-    </div>
-          
-    <div className="showcase_row">
       <ShowcaseBlock
         imageSrc={abyssalDepthsImg} 
         header="Abyssal Depths"
@@ -106,7 +105,7 @@ function App() {
     </div>
       
     <h1 className="ShowcaseSectionHeaders">Game Jams</h1>
-    <div className="showcase_row">
+    <div className="showcase-grid">
       <ShowcaseBlock
         imageSrc={breathingSpaceImg} 
         header="Breathing Space"
@@ -142,17 +141,17 @@ function App() {
     </div>
 
     <h1 className="ShowcaseSectionHeaders">Personal Projects</h1>
-  <div className="showcase_row">
-    <ShowcaseBlock
-      imageSrc={unityVoxImporterImg} 
-      header="Unity Vox Importer"
-      year="2025" 
-      hyperlinks={[]}
-      highlightedWords={["Unity"]} 
-      description="A .Vox (Magicavoxel voxel file) importer I made for Unity due to there being no free importers available. It has options to generate meshes using greedy meshing or simple culling meshing. Also supports different data formats for storing voxels"
-    />
-    {/*{imageSrc: githubLogo, link: "https://github.com/Gontarekt/VoxelPhysics-Test"}*/}
-  </div>
+    <div className="showcase-grid">
+      <ShowcaseBlock
+        imageSrc={unityVoxImporterImg} 
+        header="Unity Vox Importer"
+        year="2025" 
+        hyperlinks={[]}
+        highlightedWords={["Unity"]} 
+        description="A .Vox (Magicavoxel voxel file) importer I made for Unity due to there being no free importers available. It has options to generate meshes using greedy meshing or simple culling meshing. Also supports different data formats for storing voxels"
+      />
+      {/*{imageSrc: githubLogo, link: "https://github.com/Gontarekt/VoxelPhysics-Test"}*/}
+    </div>
 
   {/*Work Experience*/}
   <div className="main_div">
@@ -226,7 +225,7 @@ function ShowcaseBlock (args: ShowcaseBlockProperties) {
       <div className="showcase_block_image">
         <img src={args.imageSrc} className="image" />
       </div>
-      {/*<hr class="showcase_block_separator" style="justify-content: top;margin-bottom: auto;">*/}
+      <hr className="showcase-block-separator" />
       <div className="showcase_block_description_section">
         <div className="showcase_block_header_section">
           <h2 className="showcase_block_left_header">
@@ -251,7 +250,7 @@ function ShowcaseBlock (args: ShowcaseBlockProperties) {
           {args.description}
         </p>
       </div>
-      {/*<hr class="showcase_block_separator">*/}
+      <hr className="showcase-block-separator" />
       {args.hyperlinks.length > 0 && (
         <div className="showcase_block_hyperlink_section">    
             {GenerateHyperlinkButtons(args.hyperlinks)} 

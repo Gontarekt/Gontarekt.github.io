@@ -74,10 +74,11 @@ function App() {
         imageSrc={abyssalDepthsImg} 
         header="Abyssal Depths"
         year="2023" 
-        hyperlinks={[{imageSrc: itchLogo, link: "https://gontarekt.itch.io/abyssal-depths"}, {imageSrc: githubLogo, link: "https://github.com/Toddynator/cmp105-groupproject-geodude"}]}
+        hyperlinks={[{imageSrc: itchLogo, link: "https://gontarekt.itch.io/abyssal-depths"}]}
         highlightedWords={["SFML"]} 
         description="A roguelike underwater hunting game with multiple paths to progress. Made for my 1st year Games Programming university module."
       />
+      {/* {imageSrc: githubLogo, link: "https://github.com/Toddynator/cmp105-groupproject-geodude"} */}
       <ShowcaseBlock
         imageSrc={cmp208GameProjectImg} 
         header="CMP208 PS5 Game Project"
@@ -127,7 +128,7 @@ function App() {
         header="Born to Krill"
         year="2025" 
         hyperlinks={[{imageSrc: itchLogo, link: "https://aronagox.itch.io/born-to-krill"}]}
-        highlightedWords={["Godot"]} 
+        highlightedWords={["Unity"]} 
         description="Made for the 48 hour Global Game jam 2025. You are a krill battling an octopus."
       />
       <ShowcaseBlock

@@ -1,4 +1,5 @@
 import snakeImg from './assets/NeuroevolutionSnake1.png'
+import linkedInLogo from './assets/LinkedInLogo.png'
 import nomadGif from './assets/NomadEngine.gif'
 import cmp208GameProjectImg from './assets/CMP208GameProject.png'
 import abyssalDepthsImg from './assets/AbyssalDepths.png'
@@ -43,8 +44,19 @@ function App() {
             alt="Github"
           />
         </a>
-        <a href="https://gontarekt.itch.io/">
-          <img className="HyperlinkButtons" src={itchLogo} alt="Itch" />
+        <a href="https://gontarekt.itch.io">
+          <img 
+            className="HyperlinkButtons" 
+            src={itchLogo} 
+            alt="Itch" 
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/todd-gontarek">
+          <img 
+            className="HyperlinkButtons" 
+            src={linkedInLogo} 
+            alt="LinkedIn" 
+          />
         </a>
       </div>
     </div>
